@@ -1,0 +1,7 @@
+input, textarea {
+    background: var(--color-grey);
+    padding: 1rem;
+    border-radius: calc(var(--border-radius) / 2);
+    border: none;
+    width: 100%;
+}

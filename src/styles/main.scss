@@ -1,0 +1,28 @@
+@use "abstracts";
+@use "components/buttons";
+@use "components/cards";
+@use "components/form";
+@use "components/faq";
+
+@use "base/reset";
+@use "base/typography";
+@use "base/base";
+
+@use "layout/header";
+@use "layout/footer";
+@use "layout/navigation";
+@use "layout/grid";
+
+@use "blocks/half-half";
+@use "blocks/loggos";
+@use "blocks/reviews";
+@use "blocks/contact_block";
+
+@use "pages/single";
+@use "pages/contact";
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--color-off-white);
+  color: var(--color-black);
+}

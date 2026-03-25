@@ -1,0 +1,46 @@
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.text {
+    max-width: var(--text-max-width);
+    margin: 0 auto;
+    
+    &.text--center {
+        text-align: center;
+    }
+}
+
+.pagination-box {
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--grid-gap) / 2);
+    margin-top: var(--grid-gap);
+
+    margin-bottom: var(--grid-gap);
+    .page-numbers {
+        display: inline-block;
+        padding: calc(var(--grid-gap) / 5) calc(var(--grid-gap) / 3);
+        border-radius: calc(var(--border-radius) / 2);
+    }
+    span.page-numbers {
+        background-color: var(--color-grey);
+        color: var(--color-black);
+        &.current {
+            background-color: var(--color-yellow);
+            color: var(--color-white);
+        }
+    }
+
+    a.page-numbers {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        text-decoration: none;
+        transition: background-color 0.3s ease; 
+        &:hover {
+            background-color: var(--color-yellow);
+        }
+    }
+
+}

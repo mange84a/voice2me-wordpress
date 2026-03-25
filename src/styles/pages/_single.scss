@@ -1,0 +1,27 @@
+body.single {
+    background-color: var(--color-white);
+    &.single-services {
+        background-color: var(--color-off-white);
+    }
+    .entry-title {
+        text-align: center;
+    }
+    .entry-image {
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        margin-bottom: var(--section-padding);
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .text {
+        padding-top: var(--section-padding);
+        padding-bottom: var(--section-padding);
+    }
+
+    .section.has-background {
+        background-color: var(--color-off-white);
+    }
+}

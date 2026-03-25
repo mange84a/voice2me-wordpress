@@ -1,0 +1,62 @@
+$breakpoint-small: 600px; //Needed for mixins
+$breakpoint-medium: 900px; //Needed for mixins
+$breakpoint-large: 1200px; //Needed for mixins
+$breakpoint-xlarge: 1800px; //Needed for mixins
+
+:root {
+    /** Colors **/
+    --color-primary: #f08e09;
+    --color-secondary: #ffc71f;
+    --color-white: #ffffff;
+    
+
+    --color-yellow: #ffc71f;
+    --color-black: #000000;
+    --color-grey: #f5f5f5;
+    --color-grey-dark: #413b35;
+    --color-grey-light: #7f8995;
+    --color-grey-border: #e2e7ec;
+    
+    --color-off-white: #fff8e3;
+
+    --box-shadow: 0 0 60px 2px rgba(0, 0, 0, 0.08);
+    --border-radius: 16px;
+    /** Fonts **/
+    --heading-font: 'Inter', sans-serif;
+    --body-font: 'Inter', sans-serif;
+
+    --heading-font-weight: 700;
+    --lead-font-weight: 500;
+
+    /** Font sizes **/
+    --body-fontsize: 1rem;
+    --font-size-h1: 3rem;
+    --font-size-h2: 3rem;
+    --font-size-h3: 1.5rem;
+    --font-size-h4: 1rem;
+    --font-size-h5: 1rem;
+    --font-size-h6: 1rem;
+
+    --font-size-sm: 1rem;
+    --font-size-lead: 1.125rem;
+
+    /** Spacing **/
+    --grid-gap: 2.5rem;
+    --padding: 1.875rem; 
+
+    --container-max-width: 1320px;
+    --text-max-width: 900px;
+    --section-padding: 5rem;
+
+}
+
+@media (min-width: 900px) {
+    :root {
+        --mobile-only-block: none;
+        --mobile-only-flex: none;
+        --desktop-only-flex: flex;
+    }
+}
+
+
+

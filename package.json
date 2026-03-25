@@ -1,0 +1,17 @@
+{
+  "name": "webbma-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.27.3",
+    "sass": "^1.97.3"
+  },
+  "scripts": {
+    "sass": "sass --watch src/styles/main.scss:dist/bundle.min.css --style=compressed",
+    "build:sass": "sass src/styles/main.scss:dist/bundle.min.css --style=compressed",
+    "js": "esbuild src/scripts/main.js --bundle --minify --outfile=dist/bundle.min.js --watch"
+  }
+}

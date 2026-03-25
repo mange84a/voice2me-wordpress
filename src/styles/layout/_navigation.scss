@@ -1,0 +1,67 @@
+@use "../abstracts/mixins" as mixins;
+
+nav.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: var(--color-grey-dark);
+    .nav-bar__row {
+        display: flex;
+        padding-bottom: calc(var(--padding) / 2);
+        padding-top: calc(var(--padding) / 2);
+        gap: var(--grid-gap);
+        align-items: center;
+    }
+    .nav-bar__loggo-link {
+        margin-right: auto;
+    }
+    .nav-bar__menu {
+        display: none;
+        gap: var(--grid-gap);
+        align-items: center;
+        list-style: none;
+
+        @include mixins.bp-medium {
+            display: flex;
+        }
+        a {
+            color: var(--color-white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            &:hover, &:focus {
+                color: var(--color-primary);
+            }
+        }
+
+        li.current-menu-item a {
+            color: var(--color-primary);
+        }
+
+    }
+    
+    .nav-bar__mobile-menu {
+        display: block;
+        @include mixins.bp-medium {
+            display: none;
+        }
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                width: 34px;
+                height: 34px;
+                color: var(--color-white);
+                fill: var(--color-white);  
+            }
+        }
+    }
+}
+body.admin-bar nav.nav-bar {
+    top: 32px;
+}

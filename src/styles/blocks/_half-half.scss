@@ -1,0 +1,30 @@
+.section-half-half {
+    .half-half-row {
+        display: flex;
+        gap: var(--grid-gap);
+        flex-wrap: nowrap;
+        
+        > div {
+            flex: 1;
+        }
+    }
+    .half-half-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        border-radius: var(--border-radius);
+        border: 5px solid var(--color-white);
+        box-shadow: var(--box-shadow);
+    }
+    p {
+        font-size: var(--font-size-lead);
+    }
+    &.row-reverse {
+        .half-half-row {
+            flex-direction: row-reverse;
+        }
+    }
+}
