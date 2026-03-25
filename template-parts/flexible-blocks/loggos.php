@@ -17,7 +17,7 @@
                         <?php for($i = 0; $i < 4; $i++): ?>
                             <?php foreach($loggos as $loggo): ?>
                                 <li>
-                                    <?php echo wp_get_attachment_image( $loggo['ID'], 'thumbnail'); ?>
+                                    <?php echo wp_get_attachment_image( $loggo['ID'], 'medium'); ?>
                                 </li>
                             <?php endforeach; ?>
                         <?php endfor; ?>

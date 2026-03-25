@@ -13,6 +13,7 @@ $fields
         'button_label' => 'Lägg till block',
     ])
     ->addLayouts($layouts)
-    ->setLocation('page_template', '==', 'default');
+    ->setLocation('page_template', '==', 'default')
+    ->and('page_type', '!=', 'front_page');
 
 acf_add_local_field_group($fields->build());

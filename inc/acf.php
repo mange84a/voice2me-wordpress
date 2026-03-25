@@ -15,6 +15,7 @@ add_action('acf/init', function() {
     require_once(get_template_directory() . '/inc/acf-fields/flexible-content.php');
     require_once(get_template_directory() . '/inc/acf-fields/theme-settings.php');
     require_once(get_template_directory() . '/inc/acf-fields/page.php');
+    require_once(get_template_directory() . '/inc/acf-fields/frontpage.php');
     require_once(get_template_directory() . '/inc/acf-fields/page_sidebar.php');
     require_once(get_template_directory() . '/inc/acf-fields/page_contact.php');
     require_once(get_template_directory() . '/inc/acf-fields/service.php');
